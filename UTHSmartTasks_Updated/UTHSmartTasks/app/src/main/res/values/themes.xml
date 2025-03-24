@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.UTHSmartTasks" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Màu chính -->
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryVariant">#3700B3</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <!-- Màu nền -->
+        <item name="android:colorBackground">#FFFFFF</item>
+        <item name="android:windowBackground">#FFFFFF</item>
+
+        <!-- Áp dụng AppCompat -->
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+</resources>
