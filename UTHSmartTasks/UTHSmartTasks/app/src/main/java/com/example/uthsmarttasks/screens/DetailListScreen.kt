@@ -14,7 +14,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Path
-import com.example.uthsmarttasks.model.Task
+import com.example.uthsmarttasks.data.Task
 
 
 
