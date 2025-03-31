@@ -37,7 +37,14 @@ fun MainNavigation(navController: NavHostController) {
             startDestination = "list",
             modifier = Modifier.padding(innerPadding)
         ) {
-            composable("list") { ListScreen(navController) }
+            composable("list") {
+                ListScreen(
+                    onItemClick = { task ->
+                        task?.let { navController.navigate("detail_list/${it.id}") }
+                    },
+                    onEmptyList = { navController.navigate("list_error") }
+                )
+            }
             composable("detail_list/{taskId}") { backStackEntry ->
                 val taskId = backStackEntry.arguments?.getString("taskId")?.toIntOrNull()
                 taskId?.let { DetailListScreen(navController, it) }

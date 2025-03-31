@@ -23,7 +23,7 @@ data class Task(
 data class Subtask(
     val id: Int,
     val title: String,
-    val isCompleted: Boolean, // pending hoặc completed
+    val isCompleted: Boolean,
     val status: String
 )
 
